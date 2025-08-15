@@ -1,18 +1,18 @@
 <!DOCTYPE html>
 <html lang="sv">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>FC Baloch</title>
-  <link rel="stylesheet" href="style.css">
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Mitt Företag</title>
+  <link rel="stylesheet" href="style.css" />
   <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
 
-  <!-- HEADER & NAVIGATION -->
+  <!-- NAVIGATION -->
   <header>
     <nav class="navbar">
-      <div class="logo">FC Baloch</div>
+      <div class="logo">Mitt Företag</div>
       <ul class="nav-links" id="menu">
         <li><a href="#start">Start</a></li>
         <li><a href="#om">Om oss</a></li>
@@ -25,12 +25,17 @@
     </nav>
   </header>
 
-  <!-- HERO SECTION -->
-  <section id="start" class="hero">
-    <div class="hero-content">
-      <h1>This is Baloch</h1>
-      <p>FC Baloch är ett fotbollslag i Stockholm, Kista sedan 2012.</p>
-      <a href="#kontakt" class="cta">Kontakta oss</a>
+  <!-- HERO -->
+  <section id="start" class="hero" style="background-image: url('https://picsum.photos/1920/1080?blur=2');">
+    <div class="hero-overlay">
+      <div class="hero-content">
+        <h1>Vi hjälper ditt företag att växa</h1>
+        <p>Strategi, marknadsföring och design som ger resultat.</p>
+        <div class="hero-buttons">
+          <a href="#tjanster" class="cta">Se våra tjänster</a>
+          <a href="#kontakt" class="cta cta-secondary">Kontakta oss</a>
+        </div>
+      </div>
     </div>
   </section>
 
@@ -38,9 +43,8 @@
   <section id="om" class="section">
     <h2>Om oss</h2>
     <p>
-      FC Baloch startade upp som en förening för spontanfotboll för balocher i Stockholm. 
-      Detta utvecklades till ett fotbollslag där man efter ett par korpensäsonger bestämde 
-      sig för att registrera laget i divisionsspelet hos STFF.
+      Vi är ett engagerat team med lång erfarenhet inom media och marknadsföring.
+      Vårt mål är att hjälpa företag att nå sina kunder på bästa sätt.
     </p>
   </section>
 
@@ -51,17 +55,17 @@
       <div class="card">
         <i class="fas fa-bullhorn fa-2x"></i>
         <h3>Marknadsföring</h3>
-        <p>Vi skapar kampanjer som engagerar och ger resultat.</p>
+        <p>Kampanjer och strategi för att nå rätt målgrupp.</p>
       </div>
       <div class="card">
         <i class="fas fa-paint-brush fa-2x"></i>
         <h3>Design</h3>
-        <p>Grafisk design som förstärker ditt varumärke.</p>
+        <p>Professionell grafisk formgivning som stärker ditt varumärke.</p>
       </div>
       <div class="card">
         <i class="fas fa-chart-line fa-2x"></i>
-        <h3>Strategi</h3>
-        <p>Planering och analys för att nå dina mål effektivt.</p>
+        <h3>Analys</h3>
+        <p>Data och insikter som ger dig försprång mot konkurrenterna.</p>
       </div>
     </div>
   </section>
@@ -69,23 +73,20 @@
   <!-- KONTAKT -->
   <section id="kontakt" class="section contact">
     <h2>Kontakta oss</h2>
-    <p>Maila oss på <a href="mailto:info@mittforetag.se">info@mittforetag.se</a></p>
+    <p>Vill du veta mer? Skicka ett mail till <a href="mailto:info@mittforetag.se">info@mittforetag.se</a> eller fyll i vårt formulär.</p>
   </section>
 
   <!-- FOOTER -->
   <footer>
-    <p>&copy; 2025 Mitt Företag. Alla rättigheter förbehållna.</p>
+    <p>&copy; 2025 Mitt Företag | Alla rättigheter förbehållna</p>
   </footer>
 
   <script>
-    // Mobil meny toggle
     const burger = document.getElementById('burger');
     const menu = document.getElementById('menu');
     burger.addEventListener('click', () => {
       menu.classList.toggle('nav-active');
     });
   </script>
-
 </body>
 </html>
-
