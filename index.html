@@ -1,11 +1,90 @@
 <!DOCTYPE html>
-<html>
+<html lang="sv">
 <head>
   <meta charset="UTF-8">
-  <title>Min GitHub-sida</title>
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Mitt Företag</title>
+  <link rel="stylesheet" href="style.css">
+  <script src="https://kit.fontawesome.com/a076d05399.js" crossorigin="anonymous"></script>
 </head>
 <body>
-  <h1>Hej världen!</h1>
-  <p>Detta är min första GitHub Pages-sida.</p>
+
+  <!-- HEADER & NAVIGATION -->
+  <header>
+    <nav class="navbar">
+      <div class="logo">Mitt Företag</div>
+      <ul class="nav-links" id="menu">
+        <li><a href="#start">Start</a></li>
+        <li><a href="#om">Om oss</a></li>
+        <li><a href="#tjanster">Tjänster</a></li>
+        <li><a href="#kontakt">Kontakt</a></li>
+      </ul>
+      <div class="burger" id="burger">
+        <i class="fas fa-bars"></i>
+      </div>
+    </nav>
+  </header>
+
+  <!-- HERO SECTION -->
+  <section id="start" class="hero">
+    <div class="hero-content">
+      <h1>Välkommen till Mitt Företag</h1>
+      <p>Vi erbjuder marknadsföring och kreativa lösningar för din verksamhet.</p>
+      <a href="#kontakt" class="cta">Kontakta oss</a>
+    </div>
+  </section>
+
+  <!-- OM OSS -->
+  <section id="om" class="section">
+    <h2>Om oss</h2>
+    <p>
+      Vi är ett engagerat team med lång erfarenhet inom media och marknadsföring.
+      Vi hjälper dig att nå ut till din målgrupp med skräddarsydda strategier.
+    </p>
+  </section>
+
+  <!-- TJÄNSTER -->
+  <section id="tjanster" class="section services">
+    <h2>Våra tjänster</h2>
+    <div class="service-cards">
+      <div class="card">
+        <i class="fas fa-bullhorn fa-2x"></i>
+        <h3>Marknadsföring</h3>
+        <p>Vi skapar kampanjer som engagerar och ger resultat.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-paint-brush fa-2x"></i>
+        <h3>Design</h3>
+        <p>Grafisk design som förstärker ditt varumärke.</p>
+      </div>
+      <div class="card">
+        <i class="fas fa-chart-line fa-2x"></i>
+        <h3>Strategi</h3>
+        <p>Planering och analys för att nå dina mål effektivt.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- KONTAKT -->
+  <section id="kontakt" class="section contact">
+    <h2>Kontakta oss</h2>
+    <p>Maila oss på <a href="mailto:info@mittforetag.se">info@mittforetag.se</a></p>
+  </section>
+
+  <!-- FOOTER -->
+  <footer>
+    <p>&copy; 2025 Mitt Företag. Alla rättigheter förbehållna.</p>
+  </footer>
+
+  <script>
+    // Mobil meny toggle
+    const burger = document.getElementById('burger');
+    const menu = document.getElementById('menu');
+    burger.addEventListener('click', () => {
+      menu.classList.toggle('nav-active');
+    });
+  </script>
+
 </body>
 </html>
+
